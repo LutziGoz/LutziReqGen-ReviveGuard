@@ -59,15 +59,19 @@
 ## Security and Optimization Benefits
 * Security: Prevents the installation of re-registered or deprecated packages that could be compromised.
 * Efficiency: Streamlined requirements.txt results in faster installations, reduced bloat, and smaller project footprints.
-
 ### Usage Example
-* Generate the full list of packages:
-""pip freeze > requirements.txt""
-* Run the script with administrator privileges:
-""python LutziRequirementsGenerator.py""
-Follow the on-screen instructions to select the main project file and load requirements.txt.
-Review the filtered requirements and install them securely.
-Conclusion
-LutziReqGen & ReviveGuard provide a dual advantage of security and optimization. Whether you're deploying a lightweight container, securing your project against Revival Hijack, or simply managing dependencies more efficiently, this tool is your go-to solution!
+
+1. **Generate the full list of packages**:  
+   `pip freeze > requirements.txt`
+
+2. **Run the script with administrator privileges**:  
+   `python LutziRequirementsGenerator.py`  
+   Follow the on-screen instructions to:  
+   - Select the main project file and load `requirements.txt`.  
+   - Review the filtered requirements and install them securely.
+
+### Conclusion
+
+**LutziReqGen & ReviveGuard** provide dual benefits of security and optimization. Whether deploying a lightweight container, securing against Revival Hijack, or managing dependencies efficiently, this tool is your go-to solution!
 
 
