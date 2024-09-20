@@ -8,37 +8,37 @@
 3. Streamlined Installations: Generates a refined requirements.txt tailored to your project's actual dependencie
 
 ## How It Works
-Step-by-Step Guide
-1. Generate Full Requirements:
 
-""Use pip freeze > requirements.txt to create a complete list of all installed packages in your Python environment.
-""
-2. Select Main Project File:
+### Step-by-Step Guide
 
-**The user selects the primary Python file (main.py) for the project. The script will analyze this file for all imported packages.
-**
+1. **Generate Full Requirements**:
 
-3. Load Full Requirements:
+   Use `pip freeze > requirements.txt` to create a complete list of all installed packages in your Python environment.
 
-""Load the previously generated requirements.txt into the tool.
-""
+2. **Select Main Project File**:
 
-4. Compare and Filter:
+   The user selects the primary Python file (`main.py`) for the project. The script will analyze this file for all imported packages.
 
-""The script compares the imports from the main project file with the full list of installed packages.
-""
-""It then generates a new requirements_filtered.txt, including only the necessary packages.
-""
+3. **Load Full Requirements**:
 
-5. Generate Report and Review:
+   Load the previously generated `requirements.txt` into the tool.
 
+4. **Compare and Filter**:
 
-""A report is generated, highlighting unmatched imports or discrepancies, allowing for manual review.
-""
-6. Secure Installation:
+   The script compares the imports from the main project file with the full list of installed packages.
 
-""The user is prompted to install the refined dependencies using the command: pip install -r requirements_filtered.txt.
-""
+   It then generates a new `requirements_filtered.txt`, including only the necessary packages.
+
+5. **Generate Report and Review**:
+
+   A report is generated, highlighting unmatched imports or discrepancies, allowing for manual review.
+
+6. **Secure Installation**:
+
+   The user is prompted to install the refined dependencies using the command:
+
+   ```bash
+   pip install -r requirements_filtered.txt
 
 ### Visual Explanation
 
