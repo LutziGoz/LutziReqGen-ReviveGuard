@@ -57,8 +57,9 @@
 
 
 ## Security and Optimization Benefits
-* Security: Prevents the installation of re-registered or deprecated packages that could be compromised.
-* Efficiency: Streamlined requirements.txt results in faster installations, reduced bloat, and smaller project footprints.
+* **Security**: Prevents the installation of re-registered or deprecated packages that could be compromised.
+* **Efficiency**: A streamlined `requirements.txt` results in faster installations, reduced bloat, and smaller project footprints.
+
 ### Usage Example
 
 1. **Generate the full list of packages**:  
@@ -68,10 +69,12 @@
    `python LutziRequirementsGenerator.py`  
    Follow the on-screen instructions to:  
    - Select the main project file and load `requirements.txt`.  
-   - Review the filtered requirements and install them securely.
+   - Review the filtered requirements.
+
+3. **Install the Filtered Requirements**:  
+   Make sure to install the generated `requirements_filtered.txt` within the specific project environment to ensure that only the necessary packages are included and avoid affecting your global Python environment. Use:  
+   `pip install -r requirements_filtered.txt`
 
 ### Conclusion
 
-**LutziReqGen & ReviveGuard** provide dual benefits of security and optimization. Whether deploying a lightweight container, securing against Revival Hijack, or managing dependencies efficiently, this tool is your go-to solution!
-
-
+**LutziReqGen & ReviveGuard** provide dual benefits of security and optimization. By analyzing imports against the main environment of PyCharm, the script ensures that only essential packages are included. This not only creates a backup requirements file but also reduces the installation footprint when exporting projects to an executable or container. Whether you're securing against Revival Hijack or managing dependencies more efficiently, this tool is your go-to solution!
