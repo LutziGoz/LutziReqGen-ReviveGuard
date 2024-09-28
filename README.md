@@ -1,5 +1,7 @@
 # LutziReqGen-ReviveGuard
 
+![cat-7183351_1280](https://github.com/user-attachments/assets/c03153f0-6b3b-4043-900b-d1a555f4f2da)
+
 ## Generation backup and restore specific envirtonment requirements_filtered.txt from global environmant.txt
 
 ### LutziReqGen is a Python tool designed to create precise requirements_filtered.txt files for specific projects by analyzing the imports in your main Python script. This reduces unnecessary dependencies, optimizing deployment and container sizes. Additionally, it includes ReviveGuard to protect against "Revival Hijack" attacks by ensuring only verified and required packages are used, safeguarding your project from malicious dependency reinjection.
